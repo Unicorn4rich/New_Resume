@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Shoaib Ahmed</title>
+    <link rel="stylesheet" href="Dynamic_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="mainDiv">
+
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+            <div class="personal-details">
+                <h1><span id="form_name"></span></h1>
+                <h2><span id="title_change"></span></h2>
+            </div>
+            <img id="profilePicPreview" src="" alt="Profile Picture">
+        </section>
+
+
+        <div class="social-info">
+            <p class="social-item"><i class="fa-solid fa-phone"></i> Phone: <span id="phone_change"></span></p>
+            <p class="social-item"><i class="fa-solid fa-envelope"></i> Email: <span id="email_change"></span></p>
+            <p class="social-item"><i class="fa-brands fa-linkedin"></i> Linkedin: <span id="linkedin_change"></span></p>
+        </div>
+
+        <!-- Objective Section -->
+        <section id="objectiveSec">
+            <h2 class="heading">Objective</h2>
+            <p class="content-paragraph">
+                I am a passionate software developer with experience in HTML, CSS, and TypeScript, specializing in DOM manipulation. 
+                I enjoy creating dynamic, responsive web applications and crafting user-friendly interfaces that focus on both aesthetics and functionality.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="educationSec">
+            <h2 class="heading">Education</h2>
+            <p class="content-paragraph"><span id="degree_change"></span></p>
+            <p class="content-paragraph"><span id="university_change"></span></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skillSec">
+            <h2 class="heading">Skills</h2>
+            <ul class="skills-list">
+                <li><span id="skill1_change"></span></li>
+                <li><span id="skill2_change"></span></li>
+                <li><span id="skill3_change"></span></li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experienceSec" class="work-experience">
+            <h2 class="heading">Work Experience</h2>
+            <p><span id="input_job_title_change"></span> at <span id="company_change"></span>, <span id="start_year_change"></span> - <span id="present-span">Present</span></p>
+        </section>
+
+    </div>
+
+
+
+       <!-- Buttons -->
+    <div id="btnDiv">
+        <button class="btn" id="printBtn">Print</button>
+        <button class="btn" id="editBtn">Edit</button>
+
+        <div class="share-container">
+          <a href="#" id="resumeLink" class="btn">Share Resume Link</a>
+          <button class="btn" id="copyLinkBtn">Copy Link</button>
+        </div>
+        
+      </div>
+
+    
+</body>
+  
+    <script src="Dynamic_reseme.js"></script>
+    <script src="../manipulate.js"></script>
+ 
+</html>
+
+
+
+
+
+<!-- readability, maintainbility, best prectices, enhance the design and appearance and responsive for mobile devices  -->
+<!-- it is resume HTML file. i have too many span tag with their ids i want you to use each span tag id to change data and make a new html file to get user input this new file will ask user for input. i want a button to genrate resume only write html andd css code.
+
+this is a resume html  -->

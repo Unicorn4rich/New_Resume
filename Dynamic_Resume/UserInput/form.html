@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Your Information Input Form</h1>
+        
+        <form id="resumeForm" enctype="multipart/form-data">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Write your Name" required>
+
+                <label for="title">Job Title:</label>
+                <input type="text" id="input_title_id" name="title" placeholder="Write your Job Title" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="input_phone_id" name="phone" placeholder="Write your Phone number" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="input_email_id" name="email" placeholder="Enter your Email" required>
+
+                <label for="linkedin">LinkedIn:</label>
+                <input type="text" id="input_linkedin_id" name="linkedin" placeholder="Enter your Linkedin Account">
+            </fieldset>
+
+
+       
+            <!-- Profile Picture Input -->
+            <fieldset>
+                <legend>Picture</legend>
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+           </fieldset>
+
+            <!-- Education -->
+            <fieldset>
+                <legend>Education</legend>
+                <label for="degree">Degree:</label>
+                <input type="text" id="input_degree_id" name="degree" placeholder="Enter your degree" required>
+
+                <label for="university">University:</label>
+                <input type="text" id="input_university_id" name="university" placeholder="Write your university name" required>
+            </fieldset>
+
+            <!-- Skills -->
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skill1">Skill 1:</label>
+                <input type="text" id="input_skill1_id" name="skill1" placeholder="Enter your first skill" required>
+
+                <label for="skill2">Skill 2:</label>
+                <input type="text" id="input_skill2_id" name="skill2" placeholder="Enter your second skill">
+
+                <label for="skill3">Skill 3:</label>
+                <input type="text" id="input_skill3_id" name="skill3" placeholder="Enter your third skill">
+            </fieldset>
+
+            <!-- Work Experience -->
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="input_job_title_id" name="job-title" placeholder="Write your Job title" required>
+
+                <label for="company">Company:</label>
+                <input type="text" id="input_company_id" name="company" placeholder="Write your company name" required>
+
+                <label for="start-year">Start Year:</label>
+                <input type="text" id="input_start_year_id" name="start-year" placeholder="Enter your starting date">
+
+                <label for="present">End Year Date:</label>
+                <input type="text" id="input_end_year_id" name="present">
+            </fieldset>
+
+            <!-- Button -->
+            <a href="../D_Folder_Resume/Dynamic_resume.html"><button type="submit" id="R_button">Generate Resume</button></a>
+
+        </form>
+    </div>
+
+</body>
+
+<script src="formScript.js"></script>
+<script src="../manipulate.js" ></script>
+
+</html>

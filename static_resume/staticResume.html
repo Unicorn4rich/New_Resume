@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Shoaib Ahmed</title>
+    <link rel="stylesheet" href="staticStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="mainDiv">
+
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+            <div class="personal-details">
+                <h1><span id="name-span">Shoaib Ahmed</span></h1>
+                <h2><span id="title-span">Software Engineer</span></h2>
+            </div>
+            <img src="profile.PNG" alt="Profile Picture">
+        </section>
+
+        <div class="social-info">
+            <p class="social-item"><i class="fa-solid fa-phone"></i> Phone: <span id="phone-span">03142174183</span></p>
+            <p class="social-item"><i class="fa-solid fa-envelope"></i> Email: <span id="email-span">sk9952908@gmail.com</span></p>
+            <p class="social-item"><i class="fa-brands fa-linkedin"></i> Linkedin: <span id="linkedin-span">ShoaibAhmed007</span></p>
+        </div>
+
+        <!-- Objective Section -->
+        <section id="objectiveSec">
+            <h2 class="heading">Objective</h2>
+            <p class="content-paragraph">
+                I am a passionate software developer with experience in HTML, CSS, and TypeScript, specializing in DOM manipulation. 
+                I enjoy creating dynamic, responsive web applications and crafting user-friendly interfaces that focus on both aesthetics and functionality.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="educationSec">
+            <h2 class="heading">Education</h2>
+            <p class="content-paragraph"><span id="degree-span">Bachelor of Science in Computer Science</span></p>
+            <p class="content-paragraph"><span id="university-span">IQRA University 2020</span></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skillSec">
+            <h2 class="heading">Skills</h2>
+            <ul class="skills-list">
+                <li><span id="skill1-span">JavaScript</span></li>
+                <li><span id="skill2-span">TypeScript</span></li>
+                <li><span id="skill3-span">HTML & CSS</span></li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experienceSec" class="work-experience">
+            <h2 class="heading">Work Experience</h2>
+            <p><span id="job-title-span">Software Developer</span> at <span id="company-span">ABC Company</span>, <span id="start-year-span">2021</span> - <span id="present-span">Present</span></p>
+        </section>
+
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="btn-container">
+        <h3>Click to Toggle Sections</h3>
+        <div class="btn-group">
+            <button id="objectiveBtn" class="btn">Objective</button>
+            <button id="educationBtn" class="btn">Education</button>
+            <button id="skillsBtn" class="btn">Skills</button>
+            <button id="experienceBtn" class="btn">Experience</button>
+        </div>
+    </div>
+
+    
+</body>
+  
+    <script src="staticResume.js"></script>
+ 
+</html>
