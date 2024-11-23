@@ -6,8 +6,8 @@ window.addEventListener('load', () => {
     document.getElementById('title_change').textContent = title;
     let phone = localStorage.getItem('input_phone_data');
     document.getElementById('phone_change').textContent = phone;
-    let Email = localStorage.getItem('input_email_data');
-    document.getElementById('email_change').textContent = Email;
+    let email = localStorage.getItem('input_email_data');
+    document.getElementById('email_change').textContent = email;
     let linkedin = localStorage.getItem('input_linkedin_data');
     document.getElementById('linkedin_change').textContent = linkedin;
     let degree = localStorage.getItem('input_degree_data');
@@ -20,36 +20,39 @@ window.addEventListener('load', () => {
     document.getElementById('skill2_change').textContent = skill2;
     let skill3 = localStorage.getItem('input_skill3_data');
     document.getElementById('skill3_change').textContent = skill3;
-    // work experience yahn se shuro ho rha hai bacho    
-    let job_title = localStorage.getItem('input_job_title_data');
-    document.getElementById('input_job_title_change').textContent = job_title;
+    let jobTitle = localStorage.getItem('input_job_title_data');
+    document.getElementById('input_job_title_change').textContent = jobTitle;
     let company = localStorage.getItem('input_company_data');
     document.getElementById('company_change').textContent = company;
-    let start_year = localStorage.getItem('input_start_year_data');
-    document.getElementById('start_year_change').textContent = start_year;
-    let End_year = localStorage.getItem('input_end_year_data');
-    document.getElementById('start_year_change').textContent = End_year;
+    let startYear = localStorage.getItem('input_start_year_data');
+    document.getElementById('start_year_change').textContent = startYear;
+    let endYear = localStorage.getItem('input_end_year_data');
+    document.getElementById('start_year_change').textContent = endYear;
     const profilePicture = localStorage.getItem('form_profilePic');
     if (profilePicture) {
         document.getElementById('profilePicPreview').src = profilePicture;
     }
-});
-// const username = name ? name.toLowerCase().replace(/\s+/g, '-') : 'user'; // Generate username from the name
-// const baseUrl = ''
-// const uniqueResumeUrl = `${baseUrl}?/${username}`; // Create unique URL
-// // Set the resume link in the DOM
-// const resumeLink = document.getElementById('resumeLink') as HTMLAnchorElement;
-// resumeLink.setAttribute('href', uniqueResumeUrl);
-// resumeLink.textContent = uniqueResumeUrl;
-// // Copy link to clipboard functionality
-// document.getElementById('copyLinkBtn')!.addEventListener('click', () => {
-//  navigator.clipboard.writeText(uniqueResumeUrl).then(() => {
-//    alert('Resume link copied to clipboard!');
-//  });
-// });
-document.getElementById('editBtn').addEventListener('click', () => {
-    window.history.back();
-});
-document.getElementById('printBtn').addEventListener('click', () => {
-    window.print();
+    // URL generation
+    const userName = name ? name.toLowerCase().replace(/\s+/g, '-') : 'user';
+    const baseUrl = window.location.origin + window.location.pathname;
+    const uniqueResumeUrl = `${baseUrl}?user=${userName}`;
+    // Setting up the link
+    const resumeLink = document.getElementById('resumeLink');
+    resumeLink.setAttribute('href', uniqueResumeUrl);
+    resumeLink.setAttribute('target', '_blank');
+    resumeLink.textContent = "Share Resume Link";
+    // Copy link button
+    document.getElementById('copyLinkBtn').addEventListener('click', () => {
+        navigator.clipboard.writeText(uniqueResumeUrl).then(() => {
+            alert('Resume link copied to clipboard!');
+        });
+    });
+    // Edit button
+    document.getElementById('editBtn').addEventListener('click', () => {
+        window.history.back();
+    });
+    // Print button
+    document.getElementById('printBtn').addEventListener('click', () => {
+        window.print();
+    });
 });

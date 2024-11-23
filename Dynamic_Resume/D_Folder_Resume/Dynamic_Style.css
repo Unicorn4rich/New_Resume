@@ -150,6 +150,7 @@ img {
   
   #btnDiv .btn {
     margin: 10px;
+    border: none;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
